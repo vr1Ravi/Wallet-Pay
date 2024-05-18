@@ -1,3 +1,4 @@
+import React from "react";
 export interface IHeading {
   text: string;
   style?: string;
@@ -15,4 +16,7 @@ export interface ILabeledInput {
 export interface IBalance {
   amount: number;
   title?: string;
+}
+export interface IModal {
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
